@@ -3,99 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suganya S | Portfolio</title>
+    <title>Suganya S | AI & Data Science Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <nav>
-        <h2>Suganya S</h2>
-        <ul>
+    <nav class="navbar">
+        <a href="#home" class="logo">Suganya S<span>.</span></a>
+        <ul class="nav-links">
             <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#certificates">Certifications</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 </header>
 
-<section id="home">
-    <img src="assets/images/profile.png" alt="Suganya S Profile">
-    <h1>Suganya S</h1>
-    <h3>B.Tech Artificial Intelligence & Data Science</h3>
-    <p>Python | Machine Learning | Deep Learning | Computer Vision | Software Development</p>
+<main>
+    <!-- Hero / Home Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-avatar">
+            <img src="assets/images/profile.jpg" alt="Suganya S Profile Picture">
+        </div>
+        <div class="hero-content">
+            <span class="badge">AI & Data Science Student</span>
+            <h1>Suganya S</h1>
+            <h3>B.Tech Artificial Intelligence & Data Science</h3>
+            <p class="tagline">Python | Machine Learning | Deep Learning | Computer Vision | Software Development</p>
+            <div class="hero-buttons">
+                <a href="assets/resume.pdf" class="btn primary-btn" download>Download Resume</a>
+                <a href="#contact" class="btn secondary-btn">Contact Me</a>
+            </div>
+        </div>
+    </section>
 
-    <a href="assets/resume.pdf" download>Download Resume</a>
-</section>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <div class="card about-card">
+            <p>
+                Passionate B.Tech student specializing in Artificial Intelligence and Data Science, 
+                seeking opportunities to work in Python, Machine Learning, Deep Learning, Computer Vision, 
+                and Software Development. Eager to apply my technical knowledge to develop innovative 
+                AI-driven solutions, solve real-world problems, and continuously enhance my skills while 
+                contributing to the success of a forward-thinking organization.
+            </p>
+        </div>
+    </section>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        I am a third-year B.Tech Artificial Intelligence and Data Science student
-        passionate about Python, Machine Learning, Deep Learning, Computer Vision,
-        and Software Development. I enjoy developing AI-based solutions to solve
-        real-world problems.
-    </p>
-</section>
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="card edu-card">
+            <div class="edu-header">
+                <div>
+                    <h3>B.Tech in Artificial Intelligence & Data Science</h3>
+                    <p class="institution">JP College of Engineering, Tenkasi</p>
+                </div>
+                <div class="edu-meta">
+                    <span class="status-badge">3rd Year (Pursuing)</span>
+                    <p>Graduation: 2028</p>
+                </div>
+            </div>
+            <div class="coursework">
+                <h4>Relevant Coursework:</h4>
+                <div class="tags">
+                    <span>Data Structures</span>
+                    <span>Database Management Systems (DBMS)</span>
+                    <span>Python</span>
+                    <span>Fundamentals for Data Science</span>
+                    <span>Design & Analysis of Algorithms</span>
+                    <span>OS</span>
+                    <span>AI</span>
+                    <span>ML</span>
+                    <span>Computer Networks</span>
+                    <span>DPCO</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="skills">
-    <h2>Skills</h2>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <div class="tags">
+                    <span>Python</span>
+                    <span>Java (Basic)</span>
+                    <span>SQL</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>AI & ML</h3>
+                <div class="tags">
+                    <span>AI</span>
+                    <span>Machine Learning</span>
+                    <span>Computer Vision</span>
+                    <span>TensorFlow</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Data Analytics & Visualization</h3>
+                <div class="tags">
+                    <span>Power BI</span>
+                    <span>Microsoft Excel (Advanced)</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Web Technologies</h3>
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Flask</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <h3>Programming</h3>
-    <p>Python, Java, HTML, CSS, SQL, Flask</p>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            
+            <article class="project-card">
+                <span class="project-role">Data Analyst / Developer</span>
+                <h3>OptiVoyage</h3>
+                <p>Developed a route optimization system designed to enhance transportation efficiency by analyzing transit datasets to identify bottlenecks and implementing data-driven algorithms to reduce travel time and fuel consumption.</p>
+            </article>
 
-    <h3>AI</h3>
-    <p>Machine Learning, Deep Learning, Computer Vision, TensorFlow</p>
+            <article class="project-card">
+                <span class="project-role">AI Developer</span>
+                <h3>NeuroVision AI</h3>
+                <p>An AI-powered web application for brain tumor detection and severity analysis from MRI scans, using Flask, deep learning, and explainable AI (Grad-CAM) to provide prediction results and visual insights.</p>
+            </article>
 
-    <h3>Tools</h3>
-    <p>VS Code, Terminal, Git, GitHub, Jupyter Notebook, Google Colab, Power BI</p>
-</section>
+            <article class="project-card">
+                <span class="project-role">Developer</span>
+                <h3>Gesture into Text</h3>
+                <p>A real-time computer vision application that captures and translates hand gestures into text to assist in accessible communication.</p>
+            </article>
 
-<section id="projects">
-    <h2>Projects</h2>
+            <article class="project-card">
+                <span class="project-role">Researcher / Conceptual Design</span>
+                <h3>Artificial Tree</h3>
+                <p>Formulated a conceptual framework for an eco-friendly tech system centered on ecological data and environmental sustainability. Conducted baseline research and architectural mapping for green infrastructure modeling.</p>
+            </article>
 
-    <h3>OptiVoyage</h3>
-    <p>AI-powered travel planning platform for optimized trip recommendations.</p>
+        </div>
+    </section>
 
-    <h3>Gesture to Text</h3>
-    <p>Computer vision application that converts hand gestures into text.</p>
+    <!-- Certifications & Achievements Section -->
+    <section id="certificates" class="section">
+        <h2 class="section-title">Certifications & Achievements</h2>
+        <div class="two-col-grid">
+            <div>
+                <h3 class="sub-heading">Certifications & Workshops</h3>
+                <div class="certificates-list">
+                    <div class="cert-card">Microsoft Azure AI Fundamentals (AI-900)</div>
+                    <div class="cert-card">Python Certification & Data Science Workshop (HP Foundation)</div>
+                    <div class="cert-card">AI for Business Professionals</div>
+                    <div class="cert-card">Microsoft: Experimentation with Azure ML & Generative AI</div>
+                    <div class="cert-card">Power BI Workshop & Digital Skills Program</div>
+                    <div class="cert-card">Stock Market Using AI Workshop (Maker Village, Kochi)</div>
+                    <div class="cert-card">Advanced Computer Vision (Infoyas)</div>
+                </div>
+            </div>
 
-    <h3>Artificial Tree</h3>
-    <p>AI-based environmental monitoring and smart air purification concept.</p>
+            <div>
+                <h3 class="sub-heading">Hackathons</h3>
+                <div class="certificates-list">
+                    <div class="cert-card highlight-card">Participant, Smart India Hackathon (SIH)</div>
+                    <div class="cert-card highlight-card">MSME Hackathon 3.0</div>
+                    <div class="cert-card highlight-card">Selected for Round 2, Tenkasi Hackathon</div>
+                    <div class="cert-card highlight-card">Selected for Round 2, Hackathon 360 (EG Learnix)</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <h3>NeuroVision AI</h3>
-    <p>Intelligent image analysis using Artificial Intelligence and Computer Vision.</p>
-</section>
-
-<section id="certificates">
-    <h2>Certificates</h2>
-
-    <div class="certificate-box">
-        <p>My professional certifications and achievements.</p>
-
-        <a href="assets/certificates/Azure-AI.pdf" target="_blank">
-            View Certificates
-        </a>
-    </div>
-
-</section>
-
-<section id="contact">
-    <h2>Contact</h2>
-
-    <p>Email: yourmail@example.com</p>
-    <p>Phone: +91 XXXXXXXXXX</p>
-    <p>GitHub: https://github.com/yourusername</p>
-    <p>LinkedIn: https://linkedin.com/in/yourprofile</p>
-</section>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-cards">
+            <a href="mailto:Suganyas2382006@gmail.com" class="contact-item">
+                <strong>Email:</strong> Suganyas2382006@gmail.com
+            </a>
+            <a href="tel:+919894796046" class="contact-item">
+                <strong>Phone:</strong> +91 9894796046
+            </a>
+            <a href="https://github.com/SUGANYAS2382006-SKETCH" target="_blank" class="contact-item">
+                <strong>GitHub:</strong> github.com/SUGANYAS2382006-SKETCH
+            </a>
+            <a href="https://linkedin.com/in/suganya-s-809231390" target="_blank" class="contact-item">
+                <strong>LinkedIn:</strong> linkedin.com/in/suganya-s-809231390
+            </a>
+        </div>
+    </section>
+</main>
 
 <footer>
-    <p>© 2026 Suganya S. All Rights Reserved.</p>
+    <p>&copy; 2026 Suganya S. All Rights Reserved.</p>
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
