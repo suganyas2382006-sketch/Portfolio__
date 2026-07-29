@@ -65,16 +65,11 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Course Completion"
         },
         {
-            file: "Thiranex_Certificate_Suganya_S_THX-J.jpg",
+            file: Thiranex_Certificate_Suganya_S_THX-JUN1226-340",
             title: "Thiranex Certification"
         },
         {
             file: "DocScanner 28 Jul 2026 7-55 pm.jpg",
-            title: "Additional Certificate"
-        },
-        {
-            file: "IMG-20260728-WA0006.jpg",
-            title: "Additional Certificate"
         }
     ];
 
