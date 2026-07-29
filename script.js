@@ -65,18 +65,19 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Course Completion"
         },
         {
-            file: Thiranex_Certificate_Suganya_S_THX-JUN1226-340",
+            file: "Thiranex_Certificate_Suganya_S_THX-JUN1226-340.jpg", 
             title: "Thiranex Certification"
         },
         {
-            file: "DocScanner 28 Jul 2026 7-55 pm.jpg",
+            file: "docscanner-28-jul-2026.jpg",
+            title: "Additional Certificate" 
         }
     ];
 
     if (gallery) {
         certificates.forEach((cert) => {
-            // Path using capital 'C' matching GitHub repository folder name
-            const filePath = `assets/Certificates/${encodeURIComponent(cert.file)}`;
+            // Safe path construction for relative deployment
+            const filePath = `assets/Certificates/${encodeURI(cert.file)}`;
 
             const anchor = document.createElement("a");
             anchor.href = filePath;
@@ -85,12 +86,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const img = document.createElement("img");
             img.src = filePath;
-            img.alt = cert.title;
+            img.alt = cert.title || "Certificate";
             img.loading = "lazy";
 
             const titleContainer = document.createElement("div");
             titleContainer.className = "cert-card-title";
-            titleContainer.innerText = cert.title;
+            titleContainer.innerText = cert.title || "Certificate";
 
             anchor.appendChild(img);
             anchor.appendChild(titleContainer);
@@ -101,10 +102,13 @@ document.addEventListener("DOMContentLoaded", () => {
     // 2. Smooth Scrolling for Nav Links
     document.querySelectorAll('nav a').forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const section = document.querySelector(this.getAttribute('href'));
-            if (section) {
-                section.scrollIntoView({ behavior: "smooth" });
+            const targetId = this.getAttribute('href');
+            if (targetId && targetId.startsWith('#')) {
+                e.preventDefault();
+                const section = document.querySelector(targetId);
+                if (section) {
+                    section.scrollIntoView({ behavior: "smooth" });
+                }
             }
         });
     });
