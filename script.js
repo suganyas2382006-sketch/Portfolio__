@@ -1,12 +1,88 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. Dynamic Numbered Certificate Gallery Loop
+    // 1. Dynamic Certificate Image Gallery Loader with Title Overlay
     const gallery = document.getElementById("cert-gallery");
-    const totalCertificates = 8; // Change this number to your total certificate count
+
+    // Exact mapping of your certificate images from assets/Certificates/
+    const certificates = [
+        {
+            file: "certificate-5(39316063569350).jpg",
+            title: "Cultural Event - Active Participation (DMI & JP College)"
+        },
+        {
+            file: "certificate-6(39316087817629).jpg",
+            title: "Data Science Workshop (LMES & Uptor)"
+        },
+        {
+            file: "certificate-7(39316122227471).jpg",
+            title: "Digital Skills (Microsoft & Naan Mudhalvan)"
+        },
+        {
+            file: "certificate-8(39316146500848).jpg",
+            title: "Azure AI Fundamentals (CloudThat, Microsoft & Nasscom)"
+        },
+        {
+            file: "certificate-9(39316163694327).jpg",
+            title: "Tech Discovery Workshop & Industrial Visit (Maker Village & IIITM-K)"
+        },
+        {
+            file: "certificate-10(39316181355356).jpg",
+            title: "AI for Business Professionals (HP LIFE / HP Foundation)"
+        },
+        {
+            file: "certificate-11(39316200356258).jpg",
+            title: "Data Science & Analytics (HP LIFE / HP Foundation)"
+        },
+        {
+            file: "certificate-1(39315870924320).jpg",
+            title: "Certification"
+        },
+        {
+            file: "certificate-2(39315970360580).jpg",
+            title: "Certification"
+        },
+        {
+            file: "certificate-3(39316003192728).jpg",
+            title: "Certification"
+        },
+        {
+            file: "certificate-4(39316039890068).jpg",
+            title: "Certification"
+        },
+        {
+            file: "course-1(40056786032658).jpg",
+            title: "Course Completion"
+        },
+        {
+            file: "course-2(40056910518919).jpg",
+            title: "Course Completion"
+        },
+        {
+            file: "course-3(40056957992127).jpg",
+            title: "Course Completion"
+        },
+        {
+            file: "course-4(40057009150622).jpg",
+            title: "Course Completion"
+        },
+        {
+            file: "Thiranex_Certificate_Suganya_S_THX-J.jpg",
+            title: "Thiranex Certification"
+        },
+        {
+            file: "DocScanner 28 Jul 2026 7-55 pm.jpg",
+            title: "Additional Certificate"
+        },
+        {
+            file: "IMG-20260728-WA0006.jpg",
+            title: "Additional Certificate"
+        }
+    ];
 
     if (gallery) {
-        for (let i = 1; i <= totalCertificates; i++) {
-            const filePath = `assets/certificates/certificate-${i}.jpg`;
-            
+        certificates.forEach((cert) => {
+            // Path using capital 'C' matching GitHub repository folder name
+            const filePath = `assets/Certificates/${encodeURIComponent(cert.file)}`;
+
             const anchor = document.createElement("a");
             anchor.href = filePath;
             anchor.target = "_blank";
@@ -14,15 +90,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const img = document.createElement("img");
             img.src = filePath;
-            img.alt = `Certificate ${i}`;
+            img.alt = cert.title;
             img.loading = "lazy";
 
+            const titleContainer = document.createElement("div");
+            titleContainer.className = "cert-card-title";
+            titleContainer.innerText = cert.title;
+
             anchor.appendChild(img);
+            anchor.appendChild(titleContainer);
             gallery.appendChild(anchor);
-        }
+        });
     }
 
-    // 2. Smooth Scrolling for Navigation Links
+    // 2. Smooth Scrolling for Nav Links
     document.querySelectorAll('nav a').forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
@@ -38,8 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const revealSections = () => {
         sections.forEach(section => {
-            const top = section.getBoundingClientRect().top;
-            if (top < window.innerHeight - 80) {
+            if (section.getBoundingClientRect().top < window.innerHeight - 80) {
                 section.style.opacity = "1";
                 section.style.transform = "translateY(0)";
             }
