@@ -105,7 +105,7 @@ main {
     color: var(--accent-hover);
 }
 
-/* --- Hero Section & Animations --- */
+/* --- Hero Section --- */
 .hero-section {
     display: flex;
     flex-direction: column;
@@ -113,22 +113,6 @@ main {
     text-align: center;
     padding: 4rem 1rem;
     animation: fadeIn 1s ease-out;
-}
-
-.hero-avatar img {
-    width: 170px;
-    height: 170px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid var(--accent);
-    box-shadow: 0 0 25px rgba(99, 102, 241, 0.35);
-    animation: float 4s ease-in-out infinite;
-    margin-bottom: 1.5rem;
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
 }
 
 .badge {
@@ -322,13 +306,48 @@ main {
     font-size: 0.92rem;
 }
 
-/* --- Two Column Layout for Certificates & Achievements --- */
+/* --- Two Column Layout --- */
 .two-col-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
+/* Certificate Image Gallery Grid */
+.cert-image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 1rem;
+}
+
+.cert-img-card {
+    display: block;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    background: var(--card-bg);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-img-card img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.cert-img-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
+}
+
+.cert-img-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Hackathon Cards */
 .certificates-list {
     display: flex;
     flex-direction: column;
