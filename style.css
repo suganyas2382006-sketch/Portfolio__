@@ -137,11 +137,14 @@ main {
     font-size: 3.5rem;
     font-weight: 800;
     letter-spacing: -1px;
-    line-height: 1.1;
+    line-height: 1.25; /* Increased from 1.1 so 'g' and 'y' have room */
+    padding-bottom: 0.15em; /* Gives extra clearance for letter descenders */
     margin-bottom: 0.5rem;
     background: linear-gradient(180deg, #ffffff 0%, #cbd5e1 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
 }
 
 .hero-content h3 {
