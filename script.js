@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         {
             file: "docscanner-28-jul-2026.jpg",
-            title: "Additional Certificate" 
+            title: "python Certificate" 
         }
     ];
 
