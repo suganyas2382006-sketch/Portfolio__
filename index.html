@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suganya S </title>
+    <title>Suganya S | AI & Data Science Developer</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <header>
     <nav class="navbar">
         <ul class="nav-links">
@@ -29,11 +28,17 @@
     <!-- Hero / Home Section -->
     <section id="home" class="hero-section">
         <div class="hero-content">
+            <span class="badge">
+                <span class="pulse-dot"></span> Available for Opportunities
+            </span>
             <h1>Suganya S</h1>
             <h3>B.Tech Artificial Intelligence & Data Science</h3>
-            <p class="tagline">Focused on : Python | Machine Learning | Deep Learning | Computer Vision | Software Development</p>
+            <p class="tagline">Focused on Python &bull; Machine Learning &bull; Deep Learning &bull; Computer Vision &bull; Software Development</p>
             <div class="hero-buttons">
-                <a href="assets/resume.pdf" class="btn primary-btn" target="_blank" download="Suganya_S_Resume.pdf">Download Resume</a>
+                <a href="assets/resume.pdf" class="btn primary-btn" target="_blank" download="Suganya_S_Resume.pdf">
+                    <span>Download Resume</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y3="3"/></svg>
+                </a>
                 <a href="#contact" class="btn secondary-btn">Contact Me</a>
             </div>
         </div>
@@ -44,7 +49,7 @@
         <h2 class="section-title">About Me</h2>
         <div class="card about-card">
             <p>
-                Passionate B.Tech student specializing in Artificial Intelligence and Data Science, 
+                Passionate B.Tech student specializing in <strong>Artificial Intelligence and Data Science</strong>, 
                 seeking opportunities to work in Python, Machine Learning, Deep Learning, Computer Vision, 
                 and Software Development. Eager to apply my technical knowledge to develop innovative 
                 AI-driven solutions, solve real-world problems, and continuously enhance my skills while 
@@ -56,36 +61,66 @@
     <!-- Education Section -->
     <section id="education" class="section">
         <h2 class="section-title">Education</h2>
-        <div class="card edu-card">
-            <div class="edu-header">
-                <div>
-                    <h3>B.Tech in Artificial Intelligence & Data Science</h3>
-                    <p class="institution">JP College of Engineering, Tenkasi</p>
+        <div class="education-timeline">
+            
+            <!-- College / Higher Education -->
+            <div class="card edu-card">
+                <div class="edu-header">
+                    <div>
+                        <h3>B.Tech in Artificial Intelligence & Data Science</h3>
+                        <p class="institution">JP College of Engineering, Tenkasi</p>
+                    </div>
+                    <div class="edu-meta">
+                        <span class="status-badge">3rd Year (Pursuing)</span>
+                        <p class="grad-year">Expected Graduation: 2028</p>
+                    </div>
                 </div>
-                <div class="edu-meta">
-                    <span class="status-badge">3rd Year (Pursuing)</span>
-                    <p>Graduation: 2028</p>
+                <div class="coursework">
+                    <h4>Relevant Coursework</h4>
+                    <div class="tags">
+                        <span>Data Structures</span>
+                        <span>DBMS</span>
+                        <span>Python</span>
+                        <span>Fundamentals for Data Science</span>
+                        <span>Algorithms</span>
+                        <span>OS</span>
+                        <span>AI & ML</span>
+                        <span>Computer Networks</span>
+                        <span>DPCO</span>
+                    </div>
                 </div>
             </div>
-            <div class="coursework">
-                <h4>Relevant Coursework:</h4>
-                <div class="tags">
-                    <span>Data Structures</span>
-                    <span>Database Management Systems (DBMS)</span>
-                    <span>Python</span>
-                    <span>Fundamentals for Data Science</span>
-                    <span>Design & Analysis of Algorithms</span>
-                    <span>OS</span>
-                    <span>AI</span>
-                    <span>ML</span>
-                    <span>Computer Networks</span>
-                    <span>DPCO</span>
+
+            <!-- Higher Secondary School (9th - 12th) -->
+            <div class="card edu-card">
+                <div class="edu-header">
+                    <div>
+                        <h3>Higher Secondary Education (9th - 12th)</h3>
+                        <p class="institution">TMT Manjammal Girls Govt Hr Sec School, Tenkasi</p>
+                    </div>
+                    <div class="edu-meta">
+                        <span class="status-badge school-badge">Completed</span>
+                    </div>
                 </div>
             </div>
+
+            <!-- Primary & Middle School (1st - 8th) -->
+            <div class="card edu-card">
+                <div class="edu-header">
+                    <div>
+                        <h3>Primary & Middle School Education (LKG - 8th)</h3>
+                        <p class="institution">ST.John's Metric Hr Sec School, Tenkasi</p>
+                    </div>
+                    <div class="edu-meta">
+                        <span class="status-badge school-badge">Completed</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <!-- Skills Section -->
+<!-- Skills Section -->
     <section id="skills" class="section">
         <h2 class="section-title">Skills </h2>
         <div class="skills-grid">
@@ -126,31 +161,60 @@
 
     <!-- Projects Section -->
     <section id="projects" class="section">
-        <h2 class="section-title">Projects</h2>
+        <h2 class="section-title">Featured Projects</h2>
         <div class="projects-grid">
             
             <article class="project-card">
-                <span class="project-role">Data Analyst / Developer</span>
-                <h3>OptiVoyage</h3>
+                <div class="project-header">
+                    <span class="project-role">Data Analyst / Developer</span>
+                    <h3>OptiVoyage</h3>
+                </div>
                 <p>Developed a route optimization system designed to enhance transportation efficiency by analyzing transit datasets to identify bottlenecks and implementing data-driven algorithms to reduce travel time and fuel consumption.</p>
+                <div class="project-tech">
+                    <span>Python</span>
+                    <span>Algorithms</span>
+                    <span>Data Analysis</span>
+                </div>
             </article>
 
             <article class="project-card">
-                <span class="project-role">AI Developer</span>
-                <h3>NeuroVision AI</h3>
+                <div class="project-header">
+                    <span class="project-role">AI Developer</span>
+                    <h3>NeuroVision AI</h3>
+                </div>
                 <p>An AI-powered web application for brain tumor detection and severity analysis from MRI scans, using Flask, deep learning, and explainable AI (Grad-CAM) to provide prediction results and visual insights.</p>
+                <div class="project-tech">
+                    <span>Deep Learning</span>
+                    <span>Flask</span>
+                    <span>Grad-CAM</span>
+                    <span>Computer Vision</span>
+                </div>
             </article>
 
             <article class="project-card">
-                <span class="project-role">Developer</span>
-                <h3>Gesture into Text</h3>
+                <div class="project-header">
+                    <span class="project-role">Developer</span>
+                    <h3>Gesture into Text</h3>
+                </div>
                 <p>A real-time computer vision application that captures and translates hand gestures into text to assist in accessible communication.</p>
+                <div class="project-tech">
+                    <span>OpenCV</span>
+                    <span>Python</span>
+                    <span>Computer Vision</span>
+                </div>
             </article>
 
             <article class="project-card">
-                <span class="project-role">Researcher / Conceptual Design</span>
-                <h3>Artificial Tree</h3>
+                <div class="project-header">
+                    <span class="project-role">Researcher / Conceptual Design</span>
+                    <h3>Artificial Tree</h3>
+                </div>
                 <p>Formulated a conceptual framework for an eco-friendly tech system centered on ecological data and environmental sustainability. Conducted baseline research and architectural mapping for green infrastructure modeling.</p>
+                <div class="project-tech">
+                    <span>Research</span>
+                    <span>Sustainability</span>
+                    <span>Data Modeling</span>
+                </div>
             </article>
 
         </div>
@@ -159,7 +223,6 @@
     <!-- Certifications Section -->
     <section id="certificates" class="section">
         <h2 class="section-title">Certifications</h2>
-        
         <div class="single-col-container">
             <div id="cert-gallery" class="cert-image-grid">
                 <!-- Loaded dynamically via script.js -->
@@ -172,16 +235,32 @@
         <h2 class="section-title">Get In Touch</h2>
         <div class="contact-cards">
             <a href="mailto:Suganyas2382006@gmail.com" class="contact-item">
-                <strong>Email:</strong> Suganyas2382006@gmail.com
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <div class="contact-info">
+                    <span class="label">Email</span>
+                    <span class="val">Suganyas2382006@gmail.com</span>
+                </div>
             </a>
             <a href="tel:+919894796046" class="contact-item">
-                <strong>Phone:</strong> +91 9894796046
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <div class="contact-info">
+                    <span class="label">Phone</span>
+                    <span class="val">+91 9894796046</span>
+                </div>
             </a>
             <a href="https://github.com/SUGANYAS2382006-SKETCH" target="_blank" class="contact-item">
-                <strong>GitHub:</strong> github.com/SUGANYAS2382006-SKETCH
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                <div class="contact-info">
+                    <span class="label">GitHub</span>
+                    <span class="val">SUGANYAS2382006-SKETCH</span>
+                </div>
             </a>
             <a href="https://linkedin.com/in/suganya-s-809231390" target="_blank" class="contact-item">
-                <strong>LinkedIn:</strong> linkedin.com/in/suganya-s-809231390
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                <div class="contact-info">
+                    <span class="label">LinkedIn</span>
+                    <span class="val">suganya-s-809231390</span>
+                </div>
             </a>
         </div>
     </section>
