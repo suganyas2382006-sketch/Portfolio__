@@ -52,6 +52,27 @@ header {
     padding: 1.1rem 2rem;
 }
 
+/* --- Fix Profile Logo Size --- */
+.nav-avatar {
+    width: 36px;            /* Forces the image to stay small */
+    height: 36px;           /* Keeps it square */
+    border-radius: 50%;     /* Makes it a perfect circle */
+    object-fit: cover;      /* Prevents image stretching */
+    border: 1.5px solid var(--accent); /* Adds a subtle colored border */
+    flex-shrink: 0;         /* Prevents flexing issues */
+}
+
+/* --- Ensure Logo Container Flexes Correctly --- */
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
 .nav-links {
     display: flex;
     list-style: none;
