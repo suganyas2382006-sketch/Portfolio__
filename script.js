@@ -71,12 +71,12 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             file: "docscanner-28-jul-2026.jpg",
             title: "python Certificate" 
-        }
+        },
         {
             file: "infosys.jpg"
             tittle: "Advanced Computer Vision with TensorFlow"
         }
-        ];
+                        ];
 
     if (gallery) {
         certificates.forEach((cert) => {
