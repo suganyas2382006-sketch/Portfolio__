@@ -65,22 +65,22 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Course Completion"
         },
         {
-            file: "Thiranex_Certificate_Suganya_S_THX-JUN1226-340.jpg", 
+            file: "Thiranex_Certificate_Suganya_S_THX-JUN1226-340.jpg",
             title: "Thiranex Certification"
         },
         {
             file: "docscanner-28-jul-2026.jpg",
-            title: "python Certificate" 
+            title: "Python Certificate"
         },
         {
-            file: "infosys.jpg"
-            tittle: "Advanced Computer Vision with TensorFlow"
+            file: "infosys.jpg",
+            title: "Advanced Computer Vision with TensorFlow"
         }
-                        ];
+    ];
 
+    // Create gallery items
     if (gallery) {
         certificates.forEach((cert) => {
-            // Safe path construction for relative deployment
             const filePath = `assets/Certificates/${encodeURI(cert.file)}`;
 
             const anchor = document.createElement("a");
@@ -104,12 +104,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // 2. Smooth Scrolling for Nav Links
-    document.querySelectorAll('nav a').forEach(link => {
-        link.addEventListener('click', function(e) {
-            const targetId = this.getAttribute('href');
-            if (targetId && targetId.startsWith('#')) {
+    document.querySelectorAll("nav a").forEach(link => {
+        link.addEventListener("click", function (e) {
+            const targetId = this.getAttribute("href");
+
+            if (targetId && targetId.startsWith("#")) {
                 e.preventDefault();
                 const section = document.querySelector(targetId);
+
                 if (section) {
                     section.scrollIntoView({ behavior: "smooth" });
                 }
