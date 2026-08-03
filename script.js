@@ -5,10 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // Exact mapping of your certificate images from assets/Certificates/
     const certificates = [
         {
-            file: "certificate-5(39316063569350).jpg",
-            title: "Cultural Event - Active Participation (DMI & JP College)"
-        },
-        {
             file: "certificate-6(39316087817629).jpg",
             title: "Data Science Workshop (LMES & Uptor)"
         },
